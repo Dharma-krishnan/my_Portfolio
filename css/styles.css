@@ -6,6 +6,9 @@ body.active {
     overflow: hidden;
     z-index: -1;
 }
+.larger-font{
+    font-size:20px ;
+}
 .no-js #experience-timeline > div {
     background: #fff;
     padding: 10px;
@@ -745,6 +748,20 @@ footer {
         padding: 5px 10px;
     }
 }
+.about-img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    img {
+        float: left;
+        margin-right: 20px;
+    }
+}
+
 
 
 
