@@ -29,34 +29,16 @@
     });
     // loader page
     document.addEventListener("DOMContentLoaded", function () {
-        // Select the loading screen and website content elements
-        const loadingScreen = document.querySelector(".loader");
+        // Select the loader container and website content elements
+        const loaderContainer = document.querySelector(".loader-container");
         const websiteContent = document.querySelector(".website-content");
     
-        // Hide the website content initially
-        websiteContent.style.display = "none";
-    
-        // Hide the loading screen and show the website content after 5 seconds
+        // After 5 seconds, hide the loader and show the website content
         setTimeout(function () {
-            loadingScreen.style.display = "none";
-            websiteContent.style.display = "block"; // Show the website content
-        }, 7000); // 10000 milliseconds = 10 seconds
+            loaderContainer.style.display = "none";
+            websiteContent.style.display = "block";
+        }, 5000); // 5000 milliseconds = 5 seconds
     });
-    // Get the audio element
-const loadingAudio = document.getElementById('loadingAudio');
-
-// Function to hide the loading screen
-function hideLoadingScreen() {
-    // Pause the audio
-    loadingAudio.pause();
-
-    // Hide the loading screen
-    const loader = document.querySelector('.loader');
-    loader.style.display = 'none';
-}
-
-// Hide the loading screen after 10 seconds (10000 milliseconds)
-setTimeout(hideLoadingScreen, 7500);
     
 
     // Scroll to top
@@ -120,3 +102,9 @@ setTimeout(hideLoadingScreen, 7500);
     });
 
 })(jQuery);
+
+
+
+
+
+// loader
