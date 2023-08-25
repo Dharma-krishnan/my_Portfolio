@@ -27,6 +27,19 @@
             $('header, body').removeClass('active');
         }
     });
+    // loader page
+    document.addEventListener("DOMContentLoaded", function () {
+        // Select the loader container and website content elements
+        const loaderContainer = document.querySelector(".loader-container");
+        const websiteContent = document.querySelector(".website-content");
+    
+        // After 5 seconds, hide the loader and show the website content
+        setTimeout(function () {
+            loaderContainer.style.display = "none";
+            websiteContent.style.display = "block";
+        }, 5000); // 5000 milliseconds = 5 seconds
+    });
+    
 
     // Scroll to top
     $('#to-top').click(function() {
