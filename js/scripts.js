@@ -105,10 +105,13 @@
         // Get the loader element
         var loader = document.getElementById("loader");
 
-        // Hide the loader when the page is fully loaded
+        // Function to hide the loader
         function hideLoader() {
             loader.style.display = "none";
         }
+
+        // Display the loader for 2 seconds (2000 milliseconds)
+        setTimeout(hideLoader, 2000);
 
         // Attach the hideLoader function to the load event of the window
         window.addEventListener("load", hideLoader);
