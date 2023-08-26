@@ -102,15 +102,17 @@
     });
     
     window.addEventListener("load", function() {
+        // Get the loader element
         var loader = document.getElementById("loader");
-        loader.style.transition = "opacity 0.5s";
-        loader.style.opacity = 0; // Fades out the loader
-        setTimeout(function() {
+
+        // Hide the loader when the page is fully loaded
+        function hideLoader() {
             loader.style.display = "none";
-        }, 500); // Wait for the opacity transition to complete
+        }
+
+        // Attach the hideLoader function to the load event of the window
+        window.addEventListener("load", hideLoader);
     });
-
-
 
 })(jQuery);
 
