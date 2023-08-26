@@ -100,22 +100,24 @@
             $('#more-projects').fadeIn(300);
         });
     });
+
+    // loader page error flop loader idea
     
-    window.addEventListener("load", function() {
-        // Get the loader element
-        var loader = document.getElementById("loader");
+    // window.addEventListener("load", function() {
+    //     // Get the loader element
+    //     var loader = document.getElementById("loader");
 
-        // Function to hide the loader
-        function hideLoader() {
-            loader.style.display = "none";
-        }
+    //     // Function to hide the loader
+    //     function hideLoader() {
+    //         loader.style.display = "none";
+    //     }
 
-        // Display the loader for 2 seconds (2000 milliseconds)
-        setTimeout(hideLoader, 2000);
+    //     // Display the loader for 2 seconds (2000 milliseconds)
+    //     setTimeout(hideLoader, 2000);
 
-        // Attach the hideLoader function to the load event of the window
-        window.addEventListener("load", hideLoader);
-    });
+    //     // Attach the hideLoader function to the load event of the window
+    //     window.addEventListener("load", hideLoader);
+    // });
 
 })(jQuery);
 
