@@ -110,6 +110,8 @@
             loader.style.display = "none";
         }
 
+        setTimeout(hideLoader,2000);
+        
         // Attach the hideLoader function to the load event of the window
         window.addEventListener("load", hideLoader);
     });
