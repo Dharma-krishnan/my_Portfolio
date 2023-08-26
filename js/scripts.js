@@ -101,7 +101,18 @@
         });
     });
     
-    
+    window.addEventListener("load", function() {
+        // Get the loader element
+        var loader = document.getElementById("loader");
+
+        // Hide the loader when the page is fully loaded
+        function hideLoader() {
+            loader.style.display = "none";
+        }
+
+        // Attach the hideLoader function to the load event of the window
+        window.addEventListener("load", hideLoader);
+    });
 
 
 
