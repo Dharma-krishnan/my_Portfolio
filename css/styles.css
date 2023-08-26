@@ -752,12 +752,12 @@ footer {
         padding: 5px 10px;
     }
 }
-.about-img{
+/* .about-img{
     display: block;
     max-width: 90%;
     height: auto;
     margin: 0;
-}
+} */
 
 @media (min-width: 768px) {
     img {
