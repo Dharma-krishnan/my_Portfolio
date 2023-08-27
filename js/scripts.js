@@ -7,6 +7,22 @@
 
     // Remove no-js class
     $('html').removeClass('no-js');
+   
+    document.addEventListener("DOMContentLoaded", function () {
+        // Select the loader container and website content elements
+        const loaderContainer = document.querySelector(".loader-container");
+        const websiteContent = document.querySelector(".website-content");
+    
+        // Show the loader container
+        loaderContainer.style.display = "flex";
+    
+        // After 2 seconds, hide the loader and show the website content
+        setTimeout(function () {
+            loaderContainer.style.display = "none";
+            websiteContent.style.display = "block";
+        }, 2000); // 2000 milliseconds = 2 seconds
+    });
+    
 
     // Animate to section when nav is clicked
     $('header a').click(function(e) {
@@ -101,23 +117,7 @@
         });
     });
 
-    // loader page error flop loader idea
     
-    // window.addEventListener("load", function() {
-    //     // Get the loader element
-    //     var loader = document.getElementById("loader");
-
-    //     // Function to hide the loader
-    //     function hideLoader() {
-    //         loader.style.display = "none";
-    //     }
-
-    //     // Display the loader for 2 seconds (2000 milliseconds)
-    //     setTimeout(hideLoader, 2000);
-
-    //     // Attach the hideLoader function to the load event of the window
-    //     window.addEventListener("load", hideLoader);
-    // });
 
 })(jQuery);
 
