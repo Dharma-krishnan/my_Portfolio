@@ -8,23 +8,7 @@
     // Remove no-js class
     $('html').removeClass('no-js');
    
-    document.addEventListener("DOMContentLoaded", function () {
-        // Select the loader container and website content elements
-        const loaderContainer = document.querySelector(".loader-container");
-        const websiteContent = document.querySelector(".website-content");
-    
-        // Show the loader container
-        loaderContainer.style.display = "flex";
-    
-        // After 2 seconds, hide the loader and show the website content
-        setTimeout(function () {
-            loaderContainer.style.display = "none";
-            websiteContent.style.display = "block";
-        }, 2000); // 2000 milliseconds = 2 seconds
-    });
-    
-
-    // Animate to section when nav is clicked
+     // Animate to section when nav is clicked
     $('header a').click(function(e) {
 
         // Treat as normal link if no-scroll class
@@ -117,6 +101,7 @@
         });
     });
 
+    
     
 
 })(jQuery);
