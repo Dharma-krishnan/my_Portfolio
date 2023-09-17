@@ -4,6 +4,15 @@
     font-family:poppins;
     box-sizing: border-box;
 }
+.logo{
+    margin-top:10px;
+    margin-left:15px;
+    
+}
+.logo a .color-word{
+    color:#f33c3c;
+    font-size:22px;
+}
 a{
     text-decoration:none;
 }

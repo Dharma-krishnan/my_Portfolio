@@ -7,6 +7,13 @@ body.active {
     overflow: hidden;
     z-index: -1;
 }
+.blog-logo{
+    margin-left:0rem; 
+    margin-top:0rem;
+ }
+ .blog-color{
+    color:#f3323c;
+ }
 .larger-font{
     font-size:20px ;
 }
