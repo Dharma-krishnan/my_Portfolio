@@ -140,6 +140,25 @@ img{
     top:2rem;
     background-color:greenyellow;
 }
+/*  LOGO */
 .nav_logo{
-    
+    position:absolute;
+    background: linear-gradient(90deg,#ff0000,#ffff00,#ff00f3,#0033ff,#ff00c4,#ff0000);
+    background-size:400%;  
+    font-size:23px;
+    font-family:var(--body-font);
+    letter-spacing: 0.1rem;
+    font-weight:600;
+    word-spacing:5px;
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip:text;
+    animation:animate 10s linear infinte;
+}
+@keyframes animate{
+    0%{
+        background-position:0%;
+    }
+    100%{
+        background-position:400%;
+    }
 }
