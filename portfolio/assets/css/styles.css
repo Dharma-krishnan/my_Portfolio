@@ -117,7 +117,8 @@ img{
         width:80%;
         height:100%;
         padding:2rem;
-        background-color:var(--second-color);
+
+        background: linear-gradient( #08AEEA, #08AEEA, rgba(10,10,10.2));
         transition:0.5s;
     }
 }
@@ -162,4 +163,18 @@ img{
     100%{
         background-position:400%;
     }
+}
+.nav_toggle{
+    font-size:1.5rem;
+    cursor:pointer;
+}
+/*Active menu*/
+.active::after{
+    position:absolute;
+    content:'';
+    width:100%;
+    height:0.18rem;
+    left:0;
+    top:2rem;
+    background-color: yellowgreen;
 }
