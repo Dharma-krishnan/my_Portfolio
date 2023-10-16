@@ -144,15 +144,16 @@ img{
 .nav_logo{
     position:absolute;
     background: linear-gradient(90deg,#ff0000,#ffff00,#ff00f3,#0033ff,#ff00c4,#ff0000);
-    background-size:400%;  
-    font-size:23px;
-    font-family:var(--body-font);
+    background-size:150%;  
+    font-size:25px;
+    font-family:sans-serif;
     letter-spacing: 0.1rem;
     font-weight:600;
     word-spacing:5px;
     -webkit-text-fill-color:transparent;
     -webkit-background-clip:text;
-    animation:animate 10s linear infinte;
+      background-clip: text;
+    animation:animate 10s linear infinite;
 }
 @keyframes animate{
     0%{
