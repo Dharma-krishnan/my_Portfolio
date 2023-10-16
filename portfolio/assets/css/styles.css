@@ -113,7 +113,7 @@ img{
     .nav_menu{
         position:fixed;
         top:var(--header-height);
-        right:0;
+        right:-100%;
         width:80%;
         height:100%;
         padding:2rem;
@@ -141,12 +141,13 @@ img{
     top:2rem;
     background-color:greenyellow;
 }
+
 /*  LOGO */
 .nav_logo{
-    position:absolute;
+   position:relative;
     background: linear-gradient(90deg,#ff0000,#ffff00,#ff00f3,#0033ff,#ff00c4,#ff0000);
     background-size:150%;  
-    font-size:25px;
+    font-size:27.5px;
     font-family:sans-serif;
     letter-spacing: 0.1rem;
     font-weight:600;
@@ -177,4 +178,7 @@ img{
     left:0;
     top:2rem;
     background-color: yellowgreen;
+}
+.show{
+    right:0;
 }
