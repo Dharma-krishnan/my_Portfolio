@@ -13,6 +13,7 @@ showMenu('nav_toggle','nav_menu')
 
 /* ACTIVE AND REMOVE ACTIVE */ 
 const navLink=document.querySelectorAll('.nav_link')
+navLink.forEach(n=>n.classList.remove('active'))
 
 function linkAction(){
     navLink.forEach(n=>n.classList.remove('active'))
