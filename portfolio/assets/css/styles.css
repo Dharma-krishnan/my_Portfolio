@@ -329,6 +329,64 @@ img{
     width:45%;
 }
 
+/* EDUCATION AND EXPERIENCE  */
+.education{
+    width: 100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    
+}
+.row{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap:20px;
+}
+.col .contents{
+    padding:0px 30px;
+    border-left:2px solid blueviolet;
+}
+.col .contents .box{
+    position:relative;
+    padding:20px;
+    border:1px solid #eaeaea;
+    background-color: #ffffff;
+    cursor:pointer;
+    transition : all 0.4s;
+    margin-bottom:20px;
+
+}
+.col .contents .box:hover{
+    box-shadow: 0px 3px 12px 0px #ccc;
+    border:1px solid transparent;
+}
+.col .contents .box ::before{
+    content:'';
+    position:absolute;
+    width: 16px;
+    height:16px;
+    border-radius:50%;
+    left:0%;
+    right:100%;
+    top:0;
+    background-color: #11a372;
+    border:2px solid white;
+} 
+.box h3{
+    color: var(--first-color);
+}
+.box p{
+    line-height: 1.2;
+    color:#666;
+    font-size: 17px;
+
+}
+@media(max-width:768px){
+    
+}
+
+
+
 
 
 
