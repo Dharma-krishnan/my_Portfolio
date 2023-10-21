@@ -24,3 +24,33 @@ function linkAction(){
 
 }
 navLink.forEach(n=> n.addEventListener('click',linkAction))
+
+
+// email js
+const contactForm=document.getElementById('contact-form'),
+      contactMessage=document.getElementById('contact-message')
+
+
+const sendEmail =(e)=>{
+ e.preventDefault()
+
+//  serviceID -templateID -#form - publicKey
+
+ emailjs.sendForm('service_8zxtwba','template_6bbgdvl','#contact-form','fBgAUH3Yz1J13uifV')
+ .then(()=>{
+ //show sent message
+ contactMessage.textContent = 'Message sent successfully ✅'
+
+ //remove messages after 5 seconds
+      setTimeout(()=>{
+          contactMessage.textContent =''
+         },5000)
+
+         //clear input fields
+         contactForm.reset()
+        },()=>{
+          contactMessage.textContent ='message not sent (service error) ❌'
+        })
+} 
+
+contactForm.addEventListener('submit',sendEmail)     

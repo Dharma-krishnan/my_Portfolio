@@ -455,16 +455,18 @@
            <section class="contact section">
               <h2 class="section-title">Contact</h2>
               <div class="contact_conatainer bd_grid">
-                <form action="#" class="contact_form">
-                  <input type="text" placeholder="Name" class="contact_input">
-                  <input type="mail" placeholder="Email" class="contact_input">
-                  <textarea name="" id="" cols="0" row="10" class="contact_input"></textarea>
-                  <input type="button" value="Send" class="contact_button button" />
+                <form action="" class="contact_form" id="contact-form">
+                  <input type="text" placeholder="Name" name="user_name" class="contact_input" id="name"required>
+                  <input type="mail" placeholder="Email" name="user_email" class="contact_input" id="email" required>
+                  <textarea name="user_message" id="message" cols="0" row="10" class="contact_input" required></textarea>
+                 <p class="contact__message" id="contact-message"></p>
+                 
+                  <button type="submit" value="Send" class="contact_button button"  >Send</button>
                 
                 </form>
               </div>
 
-           </section>
+         </section>
            <!--footer section-->
            <footer class="footer">
             <p class="footer_title">Dharma Krishnan</p>
@@ -473,10 +475,12 @@
               <a href="https://www.linkedin.com/in/dharma-r" target="_blank" class="footer_icon"><i class='bx bxl-linkedin-square'></i></a>
               <a href="https://github.com/Dharma-krishnan" target="_blank" class="footer_icon"><i class='bx bxl-github'></i></a> 
             </div>
-           <p>&#169; 2023 Copyrights. All rights reserved.</p>
+           <p> &#169; 2023 Copyrights. All rights reserved.</p>
            </footer>
         </main>
 
+   <!-- EMAILJS -->
+   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./assets/js/main.js"></script>
