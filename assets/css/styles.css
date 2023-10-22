@@ -84,7 +84,7 @@ img{
 
 /*Layout*/
 .bd_grid{
-    max-width: 1024px;
+    max-width: 1900px;
     display:grid;
     grid-template-columns: 100%;
     grid-column-gap: 2rem;
@@ -221,6 +221,14 @@ img{
 }
 .home_img img{
     width: 100%;
+}
+@media screen and (min-width :768px){
+   .home_img{
+    position:absolute;
+    right:0;
+    bottom:0;
+    width:350px;
+   }
 }
 
 /*BUTTONS*/
@@ -466,6 +474,31 @@ body{
 }
 .home{
     height:100vh;
+}
+.home_data{
+    align-self:flex-end;
+}
+.home_social{
+    padding-top:0;
+    padding-bottom:2.5rem;
+    flex-direction:row;
+    align-self:var(--mb-4);
+    
+}
+.home_img{
+    width:460px;
+    bottom:15%;
+}
+.home_img img{
+    width:100%;
+}
+.about_container, .skills_container{
+grid-template-columns:repeat(2,1fr);
+align-items:center;
+text-align:initial;
+}
+.about_img svg{
+
 }
 
 
