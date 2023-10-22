@@ -465,8 +465,9 @@ body{
     color:var(--second-color);
 }
 .home{
-    
+    height:100vh;
 }
+
 
 
 
