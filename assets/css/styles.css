@@ -520,6 +520,7 @@ text-align:initial;
 .contact_container{
     justify-items: center;
 }
+
 }
 @media screen and(min-width:1900px) {
      .bd_grid{
