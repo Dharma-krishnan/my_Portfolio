@@ -227,7 +227,7 @@ img{
     position:absolute;
     right:0;
     bottom:0;
-    width:350px;
+    width:100%;
    }
 }
 
@@ -338,6 +338,7 @@ img{
     width:45%;
 }
 
+
 /* EDUCATION AND EXPERIENCE  */
 .education{
     width: 100%;
@@ -396,9 +397,13 @@ img{
   }
   .row .col:nth-child(2){
     margin-top:30px;
+    
   }  
 }
 /* CONTACT SECTION*/
+.contact_conatiner{
+    justify-items: center;
+}
 .contact_input{
     width:100%;
     font-size:var(--normal-font-size);
@@ -416,6 +421,10 @@ img{
     font-size:var(--normal-font-size);
     cursor: pointer;
     margin-left: auto;
+}
+.contact_button:hover{
+     box-shadow: 0px 3px 12px 5px #ccc;
+    border:1px solid transparent;
 }
 /* footer */
 .footer{
@@ -477,17 +486,20 @@ body{
 }
 .home_data{
     align-self:flex-end;
+    margin-left: 15%;
 }
 .home_social{
     padding-top:0;
     padding-bottom:2.5rem;
     flex-direction:row;
     align-self:var(--mb-4);
+    margin-left: 15%;
     
 }
 .home_img{
-    width:460px;
-    bottom:15%;
+    width:30rem;
+    bottom:0%;
+    margin-right: 15%;
 }
 .home_img img{
     width:100%;
@@ -498,10 +510,25 @@ align-items:center;
 text-align:initial;
 }
 .about_img svg{
-
+    width: 550px;
 }
 
+.contact_form{
+    width:400px;
+}
+.contact_container{
+    justify-items: center;
+}
+}
+@media screen and(min-width:1900px) {
+     .bd_grid{
+        margin-left:auto;
+        margin-right: auto;
 
+     }
+     .home_img{
+        right:10%;
+         }
 
 
 }
