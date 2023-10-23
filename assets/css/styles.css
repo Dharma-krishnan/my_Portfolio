@@ -80,6 +80,7 @@ img{
     height:auto;
     display:block;
 }
+
 /* CUSTOM CSS CLASSES */
 
 /*Layout*/
@@ -527,8 +528,8 @@ text-align:initial;
 
      }
      .home_img{
-        right:10%;
-         }
+        right:0;
+     }
 
 
 }
