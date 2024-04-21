@@ -49,6 +49,27 @@
     --z-tooltip:10;
     --z-fixed:100;
 }
+.fit {
+    max-width: 95%; /* Adjust the maximum width for smaller screens */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 0 20px; /* Add padding to the sides for better spacing */
+    box-sizing: border-box; /* Include padding and border in the total width */
+}
+
+/* Responsive styles */
+@media screen and (min-width: 768px) {
+    .fit {
+        max-width: 850px; /* Adjust the maximum width for larger screens */
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .fit {
+        max-width: 970px; /* Adjust the maximum width for even larger screens */
+    }
+}
+
+
 /* Base */
 ::before,
 ::before{
