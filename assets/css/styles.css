@@ -569,6 +569,14 @@ text-align:initial;
 }
 
 /* project section-teams */
+/* CSS */
+.project-content{
+    /* Ensure text wraps onto multiple lines */
+    white-space: normal;
+    /* Limit the width of the paragraph to prevent it from stretching too far */
+    max-width: 100%; /* You can adjust the value as needed */
+}
+
 
 .teams .carousel {
     display: flex;
