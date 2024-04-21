@@ -68,7 +68,19 @@
         max-width: 970px; /* Adjust the maximum width for even larger screens */
     }
 }
+/* Media Query for PC Screens */
+@media screen and (min-width: 768px) {
+    body {
+        margin: 0;
+    }
+}
 
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 767px) {
+    body {
+        margin: var(--header-height) 0 0 0;
+    }
+}
 
 /* Base */
 ::before,
