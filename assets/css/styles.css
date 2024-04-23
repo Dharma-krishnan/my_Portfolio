@@ -574,9 +574,15 @@ text-align:initial;
     /* Ensure text wraps onto multiple lines */
     white-space: normal;
     /* Limit the width of the paragraph to prevent it from stretching too far */
-    max-width: 100%; /* You can adjust the value as needed */
+    max-width: 50%; /* You can adjust the value as needed */
 }
-
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    p {
+        /* Adjust the font size for smaller screens */
+        font-size: 0.9rem; /* You can adjust the value as needed */
+    }
+}
 
 .teams .carousel {
     display: flex;
