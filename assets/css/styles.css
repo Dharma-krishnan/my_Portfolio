@@ -277,6 +277,24 @@ img{
 .button:hover{
     box-shadow:0 10px 36px rgba(0, 0,0, 0.15);
 }
+/* Styling for the blog button */
+.blog-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0.5em;
+    background: linear-gradient(45deg, #ff6f61, #d74177);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.blog-button:hover {
+    background: linear-gradient(45deg, #d74177, #ff6f61);
+    transform: scale(1.05);
+}
+
 .section{
     padding-top:3rem;
     padding-bottom:2rem;
